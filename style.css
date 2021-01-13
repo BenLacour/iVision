@@ -124,6 +124,7 @@ header .film3 {
 
 header button {
   background-color: transparent;
+  color: white;
   width: 15rem;
   height: 5rem;
   border: solid 0.2rem white;
@@ -132,27 +133,39 @@ header button {
   transition: all 0.2s ease-out;
 }
 
-button.hover {
+.bouton:hover {
   background-color: white;
   color: black;
   cursor: pointer;
   box-shadow: 10px 5px 5px #111;
 }
 
-span {
-  color: white;
-}
-
 .image_films_droite {
   display: flex;
+  transition: all 0.2s ease-out;
+}
+
+.image_films_droite .film1:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
 }
 
 .image_films_droite .film2 {
   margin-left: 1rem;
 }
 
+.image_films_droite .film2:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
 .image_films_droite .film3 {
   margin-left: 1rem;
+}
+
+.image_films_droite .film3:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
 }
 
 /*----------------- Trending -----------------*/
@@ -201,6 +214,21 @@ section {
   background-size: cover;
 }
 
+.trending .image_film1:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+.trending .image_film2:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+.trending .image_film3:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
 /*----------------- Footer -----------------*/
 
 footer {
@@ -232,6 +260,10 @@ footer h4 {
   margin-bottom: 1rem;
 }
 
+.centre_ligne_bas {
+  text-align: left;
+}
+
 /*----------------- Now Playing -----------------*/
 
 footer button {
@@ -256,4 +288,9 @@ footer button {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+
+.image_now_playing:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
 }
