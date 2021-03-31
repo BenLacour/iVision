@@ -1,0 +1,294 @@
+/*----------------- Tout le site -----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 5rem;
+  height: 5rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  margin-left: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #eee;
+}
+
+main {
+  width: 75%;
+  margin: 10rem auto;
+  padding: 0 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #f5f5f5;
+}
+
+i {
+  font-size: 3rem;
+  color: white;
+}
+
+/*----------------- Header -----------------*/
+
+header {
+  padding: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("./assets/Wonder-Woman-1984.jpg");
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.info_film {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.info_film h3 {
+  margin-bottom: 0.5rem;
+}
+
+.info_film h2 {
+  margin-bottom: 0.8rem;
+}
+
+.header_bas {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .film1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: url("./assets/disney-cars-aladdin-raiponce-les-clins-d-oeil-caches-dans-les-films-disney-pixar-33-photos.jpg");
+  background-size: cover;
+  height: 8rem;
+  width: 17rem;
+}
+
+header .film2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: url("./assets/cover-r4x3w1000-583516a235146-inception-inception-21-07-2010-5-g.jpg");
+  background-size: cover;
+  height: 8rem;
+  width: 17rem;
+}
+
+header .film3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: url("./assets/EA34B244F31C104EBB202E8A769CE96B56C42AA4FE63E5B93230D4A7A1E15FB0.png");
+  background-size: cover;
+  height: 8rem;
+  width: 17rem;
+}
+
+header button {
+  background-color: transparent;
+  color: white;
+  width: 15rem;
+  height: 5rem;
+  border: solid 0.2rem white;
+  border-color: white;
+  border-radius: 30px;
+  transition: all 0.2s ease-out;
+}
+
+.bouton:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  box-shadow: 10px 5px 5px #111;
+}
+
+.image_films_droite {
+  display: flex;
+  transition: all 0.2s ease-out;
+}
+
+.image_films_droite .film1:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+.image_films_droite .film2 {
+  margin-left: 1rem;
+}
+
+.image_films_droite .film2:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+.image_films_droite .film3 {
+  margin-left: 1rem;
+}
+
+.image_films_droite .film3:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+/*----------------- Trending -----------------*/
+
+section {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.trending {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.trending .image_film1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 20rem;
+  width: 30%;
+  background-image: url("./assets/ad_astra.jpg");
+  background-size: cover;
+}
+
+.trending .image_film2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 20rem;
+  width: 30%;
+  background-image: url("./assets/joker-joaquin-phoenix.jpg");
+  background-size: cover;
+}
+
+.trending .image_film3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 20rem;
+  width: 30%;
+  background-image: url("./assets/812uG5uFZhL.jpg");
+  background-size: cover;
+}
+
+.trending .image_film1:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+.trending .image_film2:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+.trending .image_film3:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
+
+/*----------------- Footer -----------------*/
+
+footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----------------- Recent Playing -----------------*/
+
+.encart_gauche {
+  width: 65%;
+}
+
+footer .encart_gauche ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .encart_gauche ul li {
+  margin-left: 0;
+  margin-bottom: 2rem;
+  width: 33%;
+}
+
+footer .heure_durée {
+  text-align: end;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+}
+
+/*----------------- Now Playing -----------------*/
+
+footer button {
+  height: 8.5rem;
+  width: 30%;
+}
+
+.encart_now_playing {
+  width: 30%;
+}
+
+.encart_now_playing .now-playing {
+  height: 5rem;
+  width: 100%;
+}
+
+.image_now_playing {
+  background-image: url("./assets/ad_astra.jpg");
+  background-size: cover;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.image_now_playing:hover {
+  box-shadow: 10px 5px 5px #111;
+  cursor: pointer;
+}
